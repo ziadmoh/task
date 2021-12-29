@@ -1,0 +1,333 @@
+<div class="container-fluid">
+  <div class=" full-page row">
+    <div id="expandIcon" class="expand-icon d-flex flex-row align-items-center justify-content-center" *ngIf="!isNavExpanded">
+      <div class=" logo">
+        <h3>Shop</h3>
+      </div>
+      <div class="expand-icons">
+        <i *ngIf="!isNavOpened"  class="fas fa-chevron-circle-down" (click)="isNavOpened = true"></i>
+        <i  *ngIf="isNavOpened" class="fas fa-chevron-circle-up" (click)="isNavOpened = false"></i>
+
+      </div>
+    </div>
+    <div *ngIf="isNavExpanded || isNavOpened" class="left-nav col-md-2 text-center d-flex flex-column justify-content-between">
+    
+        <div>
+          <div class="row logo" *ngIf="!isNavOpened">
+            <h3>Shop</h3>
+          </div>
+          <ul class="list">
+            <li>
+              <div class="list-item d-flex flex-row align-items-center ">
+                <i class="fas fa-th-large"></i>
+                <h5>Dashboard</h5>
+              </div>
+            </li>
+            <li>
+              <div class="list-item d-flex flex-row align-items-center">
+                <i class="far fa-chart-bar"></i>
+                <h5>Transaction</h5>
+              </div>
+            </li>
+            <li>
+              <div class="list-item d-flex flex-row align-items-center">
+                <i class="fas fa-tasks"></i>
+                <h5>Task</h5>
+              </div>
+            </li>
+            <li>
+              <div class="list-item d-flex flex-row align-items-center">
+                <i class="fas fa-file"></i>
+                <h5>Documents</h5>
+              </div>
+            </li>
+            <li>
+              <div class="list-item d-flex flex-row align-items-center">
+                <i class="fas fa-store-alt"></i>
+                <h5>Store</h5>
+              </div>
+            </li>
+            <li>
+              <div class="list-item d-flex flex-row align-items-center">
+                <i class="fas fa-bell"></i>
+                <h5>Notification</h5>
+              </div>
+            </li>
+            <li>
+              <div class="list-item d-flex flex-row align-items-center">
+                <i class="fas fa-user"></i>
+                <h5>Profile</h5>
+              </div>
+            </li>
+            <li>
+              <div class="list-item d-flex flex-row align-items-center">
+                <i class="fas fa-cog"></i>
+                <h5>Settings</h5>
+              </div>
+            </li>
+      
+            
+          </ul>
+         </div>
+          
+          <div>
+            <div class="upgrade-hand">
+              <i class="far fa-thumbs-up"></i>
+              <h6 class="m-3">upgrade to <strong> Pro</strong> to get all features</h6>
+              <a>Upgrade now 
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </a>
+            </div>
+            <div class="logout d-flex flex-row align-items-center">
+              <i class="fas fa-sign-out-alt"></i>
+                <h4>Log Out</h4>
+            </div>
+          </div>
+   
+     
+    </div>
+    <div class="main-content col-md-10">
+      <div class="header-row row justify-content-between align-items-center">
+        <div class="col-md-3">
+          <h3>Documents</h3>
+        </div>
+        <div class="col-md-6 d-flex flex-row justify-content-between align-items-center">
+          <div class="search-box ">
+            <input  placeholder="search" type="search">
+            <i class="s-icon fas fa-search"></i>
+          </div>
+          <div class="header-drop-down d-flex flex-row justify-content-between align-items-center">
+            <img src="../assets/face9.jpg">
+            <h5>Angelio Joli</h5>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+      <div class="content-row row">
+        <div class="my-files col-md-9">
+          <div class="add-new d-flex flex-row justify-content-between align-items-center">
+              <h4> <strong> My Files</strong></h4>
+              <button>Add New</button>
+          </div>
+          <!-- ---------------------------------------- -->
+          <div class="cloud-boxes row justify-content-between">
+            <div class="col-md-3  box"> 
+              <div class="box-container">
+                <div class="icons-row d-flex flex-row justify-content-between align-items-center">
+                  <i class="fas fa-file"></i>
+                  <i class="fas fa-ellipsis-v"></i>
+                </div>
+                <h3>Documents</h3>
+                <div class="fill-line "></div>
+                <div class="d-flex flex-row justify-content-between align-items-center">
+                  <span class="line-files">1,328 Files</span>
+                  <strong class="line-size">1.3GB</strong>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-3 box"> 
+              <div class="box-container">
+              <div class="icons-row d-flex flex-row justify-content-between align-items-center">
+                <i class="fab fa-google-drive"></i>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+              <h3>Google Drive</h3>
+              <div class="fill-line"></div>
+              <div class="d-flex flex-row justify-content-between align-items-center">
+                <span class="line-files">1,328 Files</span>
+                <strong class="line-size">1.3GB</strong>
+              </div>
+            </div>
+            </div>
+  
+            <div class="col-md-3 box"> 
+              <div class="box-container">
+              <div class="icons-row d-flex flex-row justify-content-between align-items-center">
+                <i class="fas fa-cloud"></i>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+              <h3>One Drive</h3>
+              <div class="fill-line"></div>
+              <div class="d-flex flex-row justify-content-between align-items-center">
+                <span class="line-files">1,328 Files</span>
+                <strong class="line-size">1.3GB</strong>
+              </div>
+            </div>
+            </div>
+  
+            <div class="col-md-3 box"> 
+              <div class="box-container">
+                <div class="icons-row d-flex flex-row justify-content-between align-items-center">
+                  <i class="fas fa-box-open"></i>
+                  <i class="fas fa-ellipsis-v"></i>
+                </div>
+                <h3>Dropbox</h3>
+                <div class="fill-line"></div>
+                <div class="d-flex flex-row justify-content-between align-items-center" >
+                  <span class="line-files">1,328 Files</span>
+                  <strong class="line-size">1.3GB</strong>
+                </div>
+            </div>
+          </div>
+          </div>
+  
+          <!-- -------------------------------------------------- -->
+          <div class="table-analytics row justify-content-between">
+            <div class="col-md-6 table-container">
+              <div class="header-row d-flex flex-row justify-content-between align-items-center">
+                <h4>Recent Order</h4>
+                <button>See More</button>
+              </div>
+              <table class="w-100">
+                <tr class="header-row">
+                  <th>File Name <i class="fas fa-caret-down"></i></th>
+                  <th>Date <i class="fas fa-caret-down"></i></th>
+                  <th>Size <i class="fas fa-caret-down"></i></th>
+                </tr>
+                <tr>
+                  <td class="d-flex flex-row align-items-center ">
+                    <i class="fas fa-file mx-2"></i>
+                    <h5>Xd File</h5>
+                  </td>
+                  <td>
+                    <small>01-03-2021</small>
+                  </td>
+                  <td>
+                    <strong>3.5Mb</strong>
+                  </td>
+                </tr>
+  
+                <tr>
+                  <td  class="d-flex flex-row align-items-center ">
+                    <i class="fas fa-file mx-2"></i>
+                    <h5>Figma File</h5>
+                  </td>
+                  <td>
+                    <small>01-03-2021</small>
+                  </td>
+                  <td>
+                    <strong>3.5Mb</strong>
+                  </td>
+                </tr>
+  
+                <tr>
+                  <td  class="d-flex flex-row align-items-center ">
+                    <i class="fas fa-file mx-2"></i>
+                    <h5>Documents</h5>
+                  </td>
+                  <td>
+                    <small>01-03-2021</small>
+                  </td>
+                  <td>
+                    <strong>3.5Mb</strong>
+                  </td>
+                </tr>
+  
+                <tr>
+                  <td  class="d-flex flex-row align-items-center ">
+                    <i class="fas fa-file mx-2"></i>
+                    <h5>Sound File</h5>
+                  </td>
+                  <td>
+                    <small>01-03-2021</small>
+                  </td>
+                  <td>
+                    <strong>3.5Mb</strong>
+                  </td>
+                </tr>
+  
+                <tr>
+                  <td  class="d-flex flex-row align-items-center ">
+                    <i class="fas fa-file mx-2"></i>
+                    <h5>Media</h5>
+                  </td>
+                  <td>
+                    <small>01-03-2021</small>
+                  </td>
+                  <td>
+                    <strong>3.5Mb</strong>
+                  </td>
+                </tr>
+  
+                <tr>
+                  <td  class="d-flex flex-row align-items-center ">
+                    <i class="fas fa-file mx-2"></i>
+                    <h5>Excel File</h5>
+                  </td>
+                  <td>
+                    <small>01-03-2021</small>
+                  </td>
+                  <td>
+                    <strong>3.5Mb</strong>
+                  </td>
+                </tr>
+                
+              </table>
+            </div>
+            <div class="col-md-5 analytics-contanier ">
+              <div class="header-row d-flex flex-row justify-content-between">
+                <h4>Analytics</h4>
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+              <div class="analytics-diagram">
+                <img src="../assets/fig-2.jpg" class="img-fluid" >
+              </div>
+            </div>
+          </div>
+  
+  
+  
+        </div>
+        <div class="storage-details col-md-3">
+          <div class="storage-container">
+            <h4><strong> Storage Details</strong></h4>
+            <div class="pie-diagram d-flex flex-row justify-content-center my-5">
+              <img src="../assets/fig-1.jpg" class="img-fluid">
+            </div>
+            <div class="storage-list">
+              <div class="s-list-item d-flex flex-row align-items-center justify-content-between">
+                <i class="fas fa-file"></i>
+                <div class="d-flex flex-column">
+                  <h4>Document Files</h4>
+                  <span>1,328 Files</span>
+                </div>
+                <strong>1.3GB</strong>
+              </div>
+    
+              <div class="s-list-item d-flex flex-row align-items-center justify-content-between">
+                <i class="fas fa-file"></i>
+                <div class="d-flex flex-column">
+                  <h4>Media Files</h4>
+                  <span>1,328 Files</span>
+                </div>
+                <strong>1.3GB</strong>
+              </div>
+    
+              <div class="s-list-item d-flex flex-row align-items-center justify-content-between">
+                <i class="fas fa-file"></i>
+                <div class="d-flex flex-column">
+                  <h4>Other Files</h4>
+                  <span>1,328 Files</span>
+                </div>
+                <strong>1.3GB</strong>
+              </div>
+    
+              <div class="s-list-item d-flex flex-row align-items-center justify-content-between">
+                <i class="fas fa-file"></i>
+                <div class="d-flex flex-column">
+                  <h4>Unknown</h4>
+                  <span>1,328 Files</span>
+                </div>
+                <strong>1.3GB</strong>
+              </div>
+    
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
